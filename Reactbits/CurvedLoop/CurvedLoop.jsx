@@ -110,7 +110,7 @@ const CurvedLoop = ({
 
   return (
     <div
-      className="min-h-[120px] flex items-center justify-center w-full"
+      className="h-auto  flex items-center justify-center w-full"
       style={{ visibility: ready ? "visible" : "hidden", cursor: cursorStyle }}
       onPointerDown={onPointerDown}
       onPointerMove={onPointerMove}
@@ -138,7 +138,7 @@ const CurvedLoop = ({
           />
         </defs>
         {ready && (
-          <text xmlSpace="preserve" className={`fill-white ${className ?? ""}`}>
+          <text xmlSpace="preserve" className={`fill-black ${className ?? ""}`}>
             <textPath href={`#${pathId}`} xmlSpace="preserve">
               {Array.from({ length: repeats }).map((_, i) => (
                 <tspan
