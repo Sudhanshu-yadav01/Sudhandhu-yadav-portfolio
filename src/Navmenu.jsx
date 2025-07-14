@@ -5,7 +5,7 @@ const Navmenu = () => {
   return (
     <div
       id="home"
-      className="w-full max-w-screen-xl mx-auto flex flex-wrap justify-between items-center px-4 md:px-8 py-3"
+      className="w-full max-w-screen-xl mx-auto flex flex-wrap justify-between items-center px-4 md:px-8 mt-4 py-3"
     >
       <div className="flex items-center gap-6 flex-wrap">
         <div className="flex items-center gap-2">

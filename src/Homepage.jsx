@@ -15,22 +15,15 @@ const Homepage = () => {
 
   return (
     <>
-    <div >
+    <div className="mt-28" >
           <div className="items-between m-auto mt-4 flex max-w-5xl flex-wrap justify-between gap-5">
    
      
-      <MaskedDiv maskType="type-3" className="my-4">
-  <img
-    className="cursor-pointer transition-all duration-300 hover:scale-105"
-    src="../public/aerial-view-city-by-water.jpg"
-    alt="Preview"
-  />
-</MaskedDiv>
 
       
     </div>
     </div>
-    <div className="flex items-center justify-center mt-10 ">
+    <div className="flex items-center justify-center mt-2 ">
       <SplitText
         text="Hello "
         className="text-xl lg:text-8xl font-semibold text-center"
@@ -47,8 +40,8 @@ const Homepage = () => {
       />
     </div>
 
-
-<div className="flex w-[70%] items-center text-center justify-center px-3">
+<div className="flex justify-center">
+<div className="flex w-[70%] items-center lg:mt-18 text-center justify-center px-3">
     <BlurText
   text="Hi, I am Sudhanshu Yadav, a passionate full-stack developer skilled in building dynamic, scalable web applications using Spring Boot, React, and Next.js"
   delay={150}
@@ -57,6 +50,7 @@ const Homepage = () => {
   onAnimationComplete={handleAnimationCompletetext}
   className="text-sm lg:text-2xl lg:px-9   mt-10"
 />
+</div>
 </div>
     </>
   );
