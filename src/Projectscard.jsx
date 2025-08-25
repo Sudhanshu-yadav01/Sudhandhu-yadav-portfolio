@@ -17,6 +17,14 @@ const Projectscard = () => {
       tech: ["React", "Tailwind CSS", "PETA DATA"],
     },
     {
+      title: "Email Reply Generator",
+      description:
+        "A web application that helps users generate email replies based on the context of the conversation. It uses natural language processing to understand the email thread and suggest appropriate responses.",
+      type: "video",
+      src: ["/project3.png"],
+      tech: ["React", "Material Ui", "Gemini API","Springboot","Java"],
+    },
+    {
       title: "HealthTour",
       description:
         "A website where users find all the hospitals in India which provide specialized treatment. They compare the operation charges and find the nearest hospital. Includes real-time map, multi-currency support for international users, and multilingual interface.",
