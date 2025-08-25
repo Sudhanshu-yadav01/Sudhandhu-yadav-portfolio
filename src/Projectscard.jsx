@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, {useState} from "react";
 import {
   MinimalCard,
   MinimalCardDescription,
@@ -15,27 +15,25 @@ const Projectscard = () => {
       type: "video",
       src: "/project1.mp4",
       tech: ["React", "Tailwind CSS", "PETA DATA"],
+      deployLink: "",
     },
     {
       title: "Email Reply Generator",
       description:
         "A web application that helps users generate email replies based on the context of the conversation. It uses natural language processing to understand the email thread and suggest appropriate responses.",
-      type: "video",
-      src: ["/project3.png"],
-      tech: ["React", "Material Ui", "Gemini API","Springboot","Java"],
+      type: "image",
+      src: "/project3.png",
+      tech: ["React", "Material Ui", "Gemini API", "Springboot", "Java"],
+      deployLink: "https://email-replier.netlify.app/",
     },
     {
       title: "HealthTour",
       description:
         "A website where users find all the hospitals in India which provide specialized treatment. They compare the operation charges and find the nearest hospital. Includes real-time map, multi-currency support for international users, and multilingual interface.",
       type: "image",
-      src: [
-        "/image1.png",
-        "/image2.png",
-        "/image3.png",
-        "/image4.png",
-      ],
+      src: ["/image1.png", "/image2.png", "/image3.png", "/image4.png"],
       tech: ["React", "Spring Boot", "H2 Database"],
+      deployLink: "",
     },
   ];
 
@@ -54,7 +52,7 @@ const Projectscard = () => {
   );
 };
 
-const CardItem = ({ card }) => {
+const CardItem = ({card}) => {
   const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const nextImage = () =>
@@ -112,6 +110,19 @@ const CardItem = ({ card }) => {
       <MinimalCardDescription>{card.description}</MinimalCardDescription>
 
       {/* ✅ Tech Stack */}
+      {/* Deployment Link */}
+      {card.deployLink && (
+        <div className="px-1 pb-2">
+          <a
+            href={card.deployLink}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="text-blue-600 underline text-sm font-semibold"
+          >
+            View Live Project
+          </a>
+        </div>
+      )}
       <div className="px-1 pb-4 flex flex-wrap gap-2">
         {card.tech.map((tech, i) => (
           <span
